@@ -1,0 +1,70 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TUGAS FORM DW A</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styleform.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+	<form action="hasil.html" method="GET" enctype="multipart/form-data">
+		<fieldset>
+		<legend>USER FORM TUGAS DESAIN WEB A</legend>
+		<div>
+			<label for="name">Nama</label>
+			<input type="text" id="name" name="name" placeholder="Nama Panjang" required="">
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required="" placeholder="Password Anda">
+		</div>
+		<div>
+			<label for="phone">Nomor Telepon</label>
+			<input type="tel" name="phone" id="phone" placeholder="+62">
+		</div>
+		<div>
+			<div class="checks">
+							<p>Jenis Kelamin :</p>
+				<input type="radio" name="gender" value="Laki-Laki">
+				<label for="male">Laki-Laki</label>
+				<input type="radio" name="gender" value="Perempuan">
+				<label for="female">Perempuan</label>
+			</div>
+		</div>
+		<div>
+			<label for="date">Tanggal Lahir</label>
+			<input type="date" name="date" >
+		</div>
+		<div>
+			<label for="statusMenikah">Status Menikah</label>
+			<select name="statusMenikah">
+				<option value="Belum Kawin">Belum Kawin</option>
+				<option value="Kawin">Kawin</option>
+				<option value="Cerai Hidup">Cerai Hidup</option>
+				<option value="Cerai Mati">Cerai Mati</option>
+			</select>
+		</div>
+		<div>
+			<label for="alamat">Alamat</label>
+			<textarea id="alamat" name="alamat"></textarea>
+		</div>
+		<div>
+			<label for="file">Upload KTP</label>
+			<input type="file" name="fileKTP" id="file">
+		</div>
+		<input type="submit" id="submit" value="Submit">
+		<input type="reset" id="reset" value="Reset">
+		<div class="check">
+			<input type="checkbox" name="accept" id="accept">
+						<label for="accept">Saya setuju dengan ini</label>
+		</div>
+		</fieldset>
+	</form>
+</body>
+</html>
